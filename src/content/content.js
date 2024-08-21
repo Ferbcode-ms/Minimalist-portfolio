@@ -37,22 +37,22 @@ export const data = {
     title: "Navigation",
     links: [
       {
-        href: "https://dennissnellenberg.com",
+        href: "",
         text: "Home",
         active: true,
       },
       {
-        href: "https://dennissnellenberg.com/work",
+        href: "",
         text: "Work",
         active: false,
       },
       {
-        href: "https://dennissnellenberg.com/about",
+        href: "",
         text: "About",
         active: false,
       },
       {
-        href: "https://dennissnellenberg.com/contact",
+        href: "",
         text: "Contact",
         active: false,
       },
@@ -62,19 +62,19 @@ export const data = {
     title: "Socials",
     links: [
       {
-        href: "https://www.awwwards.com/dennissnellenberg/",
+        href: "",
         text: "Awwwards",
       },
       {
-        href: "https://www.instagram.com/codebydennis/",
+        href: "",
         text: "Instagram",
       },
       {
-        href: "https://twitter.com/codebydennis",
+        href: "",
         text: "Twitter",
       },
       {
-        href: "https://www.linkedin.com/in/dennissnellenberg/",
+        href: "",
         text: "LinkedIn",
       },
     ],
@@ -88,7 +88,7 @@ export const works = [
   {
     title: "TWICE",
     description: "Interaction & Development",
-    link: "https://dennissnellenberg.com/work/twice",
+    link: "",
     image:
       "https://dennissnellenberg.com/media/pages/work/twice/0ab7e43954-1710404752/thumbnail-twice.jpg",
     bgColor: "#F1F1F1",
@@ -97,7 +97,7 @@ export const works = [
   {
     title: "The Damai",
     description: "Design & Development",
-    link: "https://dennissnellenberg.com/work/the-damai",
+    link: "",
     image:
       "https://dennissnellenberg.com/media/pages/work/the-damai/b511d32d21-1710452224/thumbnail-thedamai-v2.jpg",
     bgColor: "#E0D9D1",
@@ -106,7 +106,7 @@ export const works = [
   {
     title: "FABRIC™",
     description: "Design & Development",
-    link: "https://dennissnellenberg.com/work/fabric",
+    link: "",
     image:
       "https://dennissnellenberg.com/media/pages/work/fabric/ac07564a5f-1688453092/thumbnail-fabric-darkgray.jpg",
     bgColor: "#48494A",
@@ -115,7 +115,7 @@ export const works = [
   {
     title: "Aanstekelijk",
     description: "Design & Development",
-    link: "https://dennissnellenberg.com/work/aanstekelijk",
+    link: "",
     image:
       "https://dennissnellenberg.com/media/pages/work/aanstekelijk/441187fb44-1687423090/thumbnail-aanstekelijk.jpg",
     bgColor: "#101010",
@@ -126,7 +126,7 @@ export const works = [
 // more work
 export const buttonData = [
   {
-    href: "https://dennissnellenberg.com/work",
+    href: "",
 
     buttonText: "More work",
     countNumber: "11",
@@ -201,12 +201,12 @@ export const footerData = {
       title: "Let’s work together",
       links: [
         {
-          href: "mailto:info@dennissnellenberg.com",
-          text: "info@dennissnellenberg.com",
+          href: "mailto:manpicode@gmail.com",
+          text: "manpicode@gmail.com",
         },
         {
-          href: "tel:+31627847430",
-          text: "+31 6 27 84 74 30",
+          href: "tel:+123456789",
+          text: "+12 3 45 45 44 44",
         },
       ],
     },
@@ -214,13 +214,13 @@ export const footerData = {
       title: "Socials",
       links: [
         {
-          href: "https://www.awwwards.com/dennissnellenberg/",
+          href: "",
           text: "Awwwards",
         },
-        { href: "https://www.instagram.com/codebydennis/", text: "Instagram" },
-        { href: "https://twitter.com/codebydennis", text: "Twitter" },
+        { href: "", text: "Instagram" },
+        { href: "", text: "Twitter" },
         {
-          href: "https://www.linkedin.com/in/dennissnellenberg/",
+          href: "",
           text: "LinkedIn",
         },
       ],
