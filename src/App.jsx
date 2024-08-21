@@ -23,7 +23,7 @@ function App() {
       smooth: true, // Enable smooth scroll
       mouseMultiplier: 2,
       // Reduced for better mobile performance
-      smoothTouch: false, // Disable smooth scroll on touch devices
+      smoothTouch: true, // Disable smooth scroll on touch devices
       touchMultiplier: 0, // Multiplier for touch scrolling
       // Mouse scroll speed multiplier
     });
