@@ -205,7 +205,7 @@ export const footerData = {
           text: "manpicode@gmail.com",
         },
         {
-          href: "tel:+123456789",
+          href: "tel:+12345678",
           text: "+12 3 45 45 44 44",
         },
       ],
