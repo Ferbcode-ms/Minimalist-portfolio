@@ -21,7 +21,11 @@ function App() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Easing function
       direction: "vertical", // Vertical scroll direction
       smooth: true, // Enable smooth scroll
-      mouseMultiplier: 2, // Mouse scroll speed multiplier
+      mouseMultiplier: 2,
+      // Reduced for better mobile performance
+      smoothTouch: false, // Disable smooth scroll on touch devices
+      touchMultiplier: 2, // Multiplier for touch scrolling
+      // Mouse scroll speed multiplier
     });
 
     const raf = (time) => {
