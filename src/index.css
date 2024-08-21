@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-3d {
+  @apply animate-rotate;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+@layer utilities {
+  .animate-rotate {
+    animation: rotate 4s infinite linear;
+  }
+}
+
+@layer utilities {
+  .animate-primary {
+    @apply transition-primary;
+  }
+  .animate-fast {
+    @apply transition-fast;
+  }
+  .animate-smooth {
+    @apply transition-smooth;
+  }
+  .animate-slow {
+    @apply transition-slow;
+  }
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+li,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  /* -webkit-font-smoothing: antialiased; */
+  font-family: "Dennis Sans", sans-serif;
+
+  line-height: 1.6;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 16px;
+  font-size: clamp(16px, 1.2vw, 19px);
+  /* background-color: #1c1d20; */
+}
+
+html,
+body {
+  width: 100%;
+  /* scroll-behavior: smooth; */
+  position: relative;
+  overflow: auto;
+
+  scrollbar-width: none;
+}
+
+/* Selection */
+
+canvas,
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+svg {
+  max-width: none;
+  height: auto;
+  box-sizing: border-box;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* ------------------------- Typography -------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+span,
+strong,
+em {
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-weight: 450;
+  letter-spacing: normal;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p:last-child,
+p.big:last-child,
+p.small:last-child,
+a:last-child,
+strong:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: clamp(3.25em, 7vw, 8em);
+  line-height: 1.065;
+  margin-bottom: 1em;
+  font-size: calc(clamp(3.25em, 7vw, 8em) * 0.875);
+}
+
+h2 {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: calc(clamp(3.25em, 5vw, 4.5em) * 0.75);
+  line-height: 1.065;
+  margin-bottom: 0.66em;
+}
+
+h3 {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: clamp(2.66em, 4.65vw, 5.32em);
+  line-height: 1.065;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: clamp(1.55em, 2.3vw, 2.5em);
+  line-height: 1.45;
+  margin-bottom: 1em;
+}
+
+h5 {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 0.6em;
+  line-height: 1.065;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
+
+p {
+  font-family: "Dennis Sans", sans-serif;
+  font-weight: 450;
+  font-style: normal;
+  color: #1c1d20;
+  font-size: 1em;
+  line-height: 1.66;
+  margin-bottom: 1em;
+}
+
+p.small {
+  font-size: 0.8em;
+  line-height: 1.75;
+  letter-spacing: 0.015em;
+}
+
+p.big {
+  font-size: 1.2em;
+}
+
+strong {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+/* btn after--------
+ */
+
+.btn-click::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  background-color: white;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  scale: 0;
+  transition: all;
+  transition-duration: 100ms;
+}
+
+.btn-click:hover:after {
+  scale: 1;
+}
+.btn-click-ham::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  scale: 0;
+  transition: all;
+  transition-duration: 100ms;
+}
+
+.btn-click-ham:hover:after {
+  scale: 1;
+}
